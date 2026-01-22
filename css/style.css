@@ -1,0 +1,192 @@
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* header title */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* dashboard */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dashboard-box-total {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.dashboard-box-completed {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.dashboard-box-pending {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+/* form */
+.formInput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.formInput input[type="text"],
+.formInput input[type="date"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formInput button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* search & filter */
+.searchAndFilter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.searchAndFilter input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searchAndFilter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* table */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.taskList {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #d8ecff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.taskList th {
+  background: #8cd1ff;
+  padding: 14px 10px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #000;
+}
+
+.taskList td {
+  padding: 12px 10px;
+  background-color: #e8f3ff;
+  border-bottom: 1px solid #c8e4ff;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.taskList tr:last-child td {
+  border-bottom: none;
+}
+
+.taskList td:last-child {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.add-subtask-btn {
+  background-color: #b6e3ff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-btn {
+  background-color: #ffe28a;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.status-btn {
+  background-color: #8fd19e;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #000;
+}
+
+.delete-btn {
+  background-color: #ff7a7a;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+}
+
+.taskList button:hover {
+  opacity: 0.85;
+}
+
+

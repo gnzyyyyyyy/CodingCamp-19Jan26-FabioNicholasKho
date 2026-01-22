@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container"> <!-- Box Border -->
+        <!-- Header -->
+        <header class="header">
+            <h1>To Do List</h1>
+        </header>
+
+        <main>
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <div class="dashboard-box-total">
+                    <h2>Total Tasks</h2>
+                    <p id="totalTasks">0</p>
+                </div>
+                <div class="dashboard-box-completed">
+                    <h2>Completed Tasks</h2>
+                    <p id="completedTasks">0</p>
+                </div>
+                <div class="dashboard-box-pending">
+                    <h2>Pending Tasks</h2>
+                    <p id="pendingTasks">0</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Form -->
+            <div class="formInput">
+                <input type="text" id="taskInput" placeholder="Enter a task">
+                <input type="date" id="dateInput">
+                <button id="addTask">Add Task</button>
+            </div>
+
+            <!-- Search & Filter -->
+            <div class="searchAndFilter">
+                <input type="text" id="searchInput" placeholder="Search tasks">
+                <select id="statusFilter">
+                    <option value="" disabled selected>Filter</option>
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                </select>
+            </div>
+
+            <!-- Table for the tasks -->
+            <div class="table-wrapper">
+                <table class="taskList">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="taskTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
